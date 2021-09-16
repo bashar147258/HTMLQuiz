@@ -4,62 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
+    <title>HTML Quiz</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <h1>Password Generator</h1>
-  </header>
+
   <body>
-    <div class="container">
-      <!--Theme Selector-->
-      <div class="theme-switch-wrapper">
-        <h4>Enable Dark Mode</h4>
-        <label class="theme-switch" for="lightbox">
-          <input type="checkbox" id="lightbox" />
-          <span class="slider round"></span>
-        </label>
+    <header>
+      <h1>HTML Quiz</h1>
+      <h3 class="record"></h6>
+      <h3 class="timer"></h6>
+    </header>
+    <hr style="margin-bottom: 20px" />
+    <div id="quiz">
+      <h4 class="question"></h4>
+      <h2 class="sButton"></h2>
+      <div class="choices">
       </div>
 
-      <!--Main Password generator box-->
+      <hr style="margin-top: 50px" />
+      <div class="scoreContainer">
+          <h4 class="feedback "></h4>
+          <h4 class="scoreCounter"></h4>
+          <h2 class="prompt" id="nameInput"></h2>
+          <h2 class="submission"></h2>
+          
+      </div>
+      <footer>
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
 
-      <!--Generated password goes here-->
-      <div class="pasword-container">
-        <textarea
-          id="password"
-          placeholder="Password"
-          aria-label="Generated Pasword"
-        ></textarea>
-
-        <button id="copy"></button>
-      </div>
-      <!--Password Parameters-->
-      <div class="parameters">
-        <div class="pass-length">
-          <!--Slider <input type="range" min="1" max="128" value="8" class="slider" /> -->
-          <label>Password Length</label>
-          <input type="number" id="pass-len" min="8" max="128" value="8" />
+        <div class="theme-switch-wrapper">
+          <h6>Enable Dark Mode</h6>
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <span class="slider round"></span>
+          </label>
         </div>
-        <div class="lowercase">
-          <label>Include Lowercase</label>
-          <input type="checkbox" id="lowercase" checked />
-        </div>
-        <div class="uppercase">
-          <label>Include Uppercase</label>
-          <input type="checkbox" id="uppercase" unchecked />
-        </div>
-        <div class="numeric">
-          <label>Include Numbers</label>
-          <input type="checkbox" id="numeric" unchecked />
-        </div>
-        <div class="specialChars">
-          <label>Include Special Characters</label>
-          <input type="checkbox" id="specialChars" unchecked />
-        </div>
-      </div>
-      <div class="container-footer">
-        <button id="generate" class="btn">Generate Password</button>
-      </div>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
