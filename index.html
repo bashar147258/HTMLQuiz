@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Javascript Quiz</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <body> 
-        <header>
-            <h1>HTML Quiz</h1>
-            <p class="record"></p>
-            <p class="timer"></p>
-           
-            
-        </header>
-        <hr style="margin-bottom: 20px">
-        <div id="quiz">
-            <h4 class="question"></p>
-            <div class="choices">
-               <!--<button id="choice0"><span id="option"></span></button>-->
-                <!--<input id="choice0" type=button onclick="selectAnswer(choice0)" ><span id="option"></span></button>-->
-                <!--<button id="choice1"><span id="option"></span></button>
-                <button id="choice2"><span id="option"></span></button>-->
-                
+  <body>
+    <header>
+      <h1>HTML Quiz</h1>
+      <h3 class="record"></h6>
+      <h3 class="timer"></h6>
+    </header>
+    <hr style="margin-bottom: 20px" />
+    <div id="quiz">
+      <h4 class="question"></h4>
+      <h2 class="sButton"></h2>
+      <div class="choices">
+      </div>
 
-        
-            </div>
-     
-            <hr style="margin-top: 50px">
-                
-            <footer>
-                <div id="myProgress">
-                    <div id="myBar"></div>
-                </div>
-                    
-                <div class="theme-switch-wrapper">
-                    <h6> Enable Dark Mode </h4>
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-            </footer>
-            </div>
-        <script src="script.js"></script>
-    </body>
+      <hr style="margin-top: 50px" />
+      <div class="scoreContainer">
+          <h4 class="feedback "></h4>
+          <h4 class="scoreCounter"></h4>
+          <h2 class="prompt" id="nameInput"></h2>
+          <h2 class="submission"></h2>
+          
+      </div>
+      <footer>
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+
+        <div class="theme-switch-wrapper">
+          <h6>Enable Dark Mode</h6>
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
-
